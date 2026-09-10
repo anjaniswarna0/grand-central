@@ -35,3 +35,7 @@ jobs:
 
       - name: Run tests
         run: npm test --if-present
+
+# demo: this comment line, added via a PR, exists to prove the
+# actionlint check (lint-workflows.yml) actually runs and passes
+# on pull requests that touch .github/workflows/**.
