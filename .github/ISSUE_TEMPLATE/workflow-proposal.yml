@@ -1,0 +1,46 @@
+name: Workflow Proposal
+description: Propose a new reusable workflow, or a breaking change to an existing one
+title: "[Workflow Proposal]: "
+labels: ["proposal", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for anything bigger than a one-line fix — a new reusable workflow, or a change that could affect existing callers.
+  - type: input
+    id: workflow-name
+    attributes:
+      label: Workflow name
+      placeholder: reusable-deploy.yml
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: inputs-secrets
+    attributes:
+      label: Proposed inputs / secrets
+      description: What will callers need to pass in?
+    validations:
+      required: false
+  - type: textarea
+    id: consumers
+    attributes:
+      label: Who else is affected?
+      description: If this changes an existing workflow, which repos call it today?
+    validations:
+      required: false
+  - type: dropdown
+    id: breaking
+    attributes:
+      label: Is this a breaking change?
+      options:
+        - "No"
+        - "Yes"
+        - "Not sure"
+    validations:
+      required: true
