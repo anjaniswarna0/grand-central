@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/anjaniswarna0/grand-central/discussions
+    about: Have a question instead of a concrete proposal? Start a discussion.
